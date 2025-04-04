@@ -33,7 +33,7 @@
         
         <div class="d-flex justify-content-between mb-3">
             <input type="text" id="searchBox" class="form-control w-50" placeholder="Search products...">
-            <a href="addProduct.jsp" class="btn btn-primary">Add Product</a>
+            <a href="products?action=add" class="btn btn-primary">Add Product</a>
         </div>
 
         <table class="table table-striped">
@@ -58,9 +58,9 @@
                 		<td>${product.name}</td>
                 		<td>${product.price}</td>
                 		<td><img src="${product.imagePath}"></td>
-                		<td><a href="products?action=addCart?code=${product.code}}">Add to Cart</a></td>
-                		<td><a href="products?action=update?code=${product.code}}">Edit</a></td>
-                		<td><a href="products?action=delete?code=${product.code}}">Delete</a></td>
+                		<td><a href="products?action=addCart&code=${product.code}">Add to Cart</a></td>
+                		<td><a href="products?action=update&code=${product.code}">Edit</a></td>
+                		<td><a href="products?action=delete&code=${product.code}">Delete</a></td>
                 	</tr>
                 </c:forEach>
             </tbody>
