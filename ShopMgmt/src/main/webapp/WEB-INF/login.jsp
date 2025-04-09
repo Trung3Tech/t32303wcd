@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,6 +82,7 @@
     <div class="header-banner">VIP Pro Sales</div>
     <div class="subtext">Welcome to the exclusive sales portal</div>
     <h2>Login</h2>
+    <h3 style="color: #ff0000">${message}</h3>
     <form action="login" method="post">
       <div class="mb-3">
         <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
